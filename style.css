@@ -1,0 +1,70 @@
+@import url('https://unpkg.com/@catppuccin/palette/css/catppuccin.css');
+
+body {
+    color: var(--ctp-latte-text);
+    background: var(--ctp-latte-base);
+    font: 100% "VT323", monospace;
+    font-size: 30px;
+  }
+
+
+h1 {
+    font-family: 'Press Start 2P', system-ui;
+    font-size: larger;
+
+    padding-top: 25px;
+
+    text-shadow: 3px 3px var(--ctp-latte-surface1);
+    
+}
+
+h1:hover {
+}
+
+
+img {
+    margin: 25px;
+}
+
+.logo {
+    float: left;
+    width: fit-content;
+    
+    border-color: var(--ctp-latte-mauve);
+    border-radius: 10%;
+    border-style: solid;
+    transition: 0.5s ease;
+}
+
+.logo:hover {
+    border-color: var(--ctp-latte-lavender);
+    border-image-slice: 1;
+    box-shadow: 20px 30px var(--ctp-latte-crust);
+    margin-top: 10px;
+}
+
+@media (prefers-color-scheme: dark) {
+    body {
+      color: var(--ctp-mocha-text);
+      background: var(--ctp-mocha-base);
+    }
+
+    h1 {
+        text-shadow: 3px 3px var(--ctp-mocha-surface1);
+    }
+  
+    .lavender {
+        color: var(--ctp-mocha-lavender);
+      }
+
+    .logo {
+        border-color: var(--ctp-mocha-mauve);
+    }
+
+    .logo:hover {
+
+        border-color: var(--ctp-mocha-lavender);
+        box-shadow: 20px 20px 0px var(--ctp-mocha-crust);
+    }
+
+  }
