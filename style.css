@@ -5,30 +5,38 @@ body {
     background: var(--ctp-latte-base);
     font: 100% "VT323", monospace;
     font-size: 30px;
+    max-width: fit-content;
+    margin: 2%;
+    text-align: justify;
   }
 
 
 h1 {
     font-family: 'Press Start 2P', system-ui;
     font-size: larger;
+    text-align: center;
 
-    padding-top: 25px;
 
     text-shadow: 3px 3px var(--ctp-latte-surface1);
     
 }
 
-h1:hover {
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 1%;
 }
 
+li {
+    display: inline;
+}
 
 img {
-    margin: 25px;
+    margin-right: 1.75%;
 }
 
 .logo {
     float: left;
-    width: fit-content;
     
     border-color: var(--ctp-latte-mauve);
     border-radius: 10%;
@@ -40,8 +48,30 @@ img {
     border-color: var(--ctp-latte-lavender);
     border-image-slice: 1;
     box-shadow: 20px 30px var(--ctp-latte-crust);
-    margin-top: 10px;
+    margin-top: -10px;
 }
+
+.box {
+    transition: 0.5s ease;
+    display: flex;
+    justify-content: center;
+    
+    border-style: solid;
+    border-width: 5px;
+    border-radius: 35px;
+    border-color: var(--ctp-latte-mauve);
+
+}
+
+.box:hover {
+    border-radius: 20px;
+}
+
+
+.responsive {
+    max-width: fit-content;
+    height: auto;
+  }
 
 @media (prefers-color-scheme: dark) {
     body {
@@ -65,6 +95,10 @@ img {
 
         border-color: var(--ctp-mocha-lavender);
         box-shadow: 20px 20px 0px var(--ctp-mocha-crust);
+    }
+
+    .box {
+        border-color: var(--ctp-mocha-mauve);
     }
 
   }
