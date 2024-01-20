@@ -35,6 +35,23 @@ img {
     margin-right: 1.75%;
 }
 
+.lavender {
+        color: var(--ctp-latte-lavender);
+      }
+
+.icon {
+    -webkit-transition: all 0.5s;
+    transition: all 0.5;
+    color: var(--ctp-latte-lavender)
+    margin: 0 auto;
+    padding: 50px;
+}
+
+.icon:hover {
+    transform: scale(110%);
+    color: var(--ctp-latte-mauve)
+}
+
 .logo {
     float: left;
     
@@ -42,6 +59,7 @@ img {
     border-radius: 10%;
     border-style: solid;
     transition: 0.5s ease;
+    margin-bottom: 10px;
 }
 
 .logo:hover {
@@ -51,15 +69,18 @@ img {
     margin-top: -10px;
 }
 
-.box {
+.smallbox {
     transition: 0.5s ease;
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
+    align-items: center;
+
+    height: 100px;
     
-    border-style: solid;
-    border-width: 5px;
+    background: linear-gradient(var(--ctp-latte-base), var(--ctp-latte-crust)) padding-box, linear-gradient(var(--ctp-latte-lavender), var(--ctp-latte-mauve)) border-box;
     border-radius: 35px;
-    border-color: var(--ctp-latte-mauve);
+    border: 4px solid transparent;
+    margin-bottom: 200px;
 
 }
 
@@ -67,6 +88,12 @@ img {
     border-radius: 20px;
 }
 
+.footer {
+    margin-top: 75%;
+    padding: 50px;
+    border-top-style: solid;
+    border-color: var(--ctp-latte-surface1);
+}
 
 .responsive {
     max-width: fit-content;
@@ -84,8 +111,17 @@ img {
     }
   
     .lavender {
+
         color: var(--ctp-mocha-lavender);
       }
+
+    .icon {
+        color: var(--ctp-mocha-lavender)
+    }
+    .icon:hover {
+
+        color: var(--ctp-mocha-mauve)
+    }
 
     .logo {
         border-color: var(--ctp-mocha-mauve);
@@ -97,8 +133,12 @@ img {
         box-shadow: 20px 20px 0px var(--ctp-mocha-crust);
     }
 
-    .box {
-        border-color: var(--ctp-mocha-mauve);
+    .smallbox {
+        background: linear-gradient(var(--ctp-mocha-base), var(--ctp-mocha-crust)) padding-box, linear-gradient(var(--ctp-mocha-lavender), var(--ctp-mocha-mauve)) border-box;
+    }
+
+    .footer {
+        border-color: var(--ctp-mocha-surface1);
     }
 
   }
