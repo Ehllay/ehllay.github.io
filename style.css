@@ -80,11 +80,11 @@ img {
     background: linear-gradient(var(--ctp-latte-base), var(--ctp-latte-crust)) padding-box, linear-gradient(var(--ctp-latte-lavender), var(--ctp-latte-mauve)) border-box;
     border-radius: 35px;
     border: 4px solid transparent;
-    margin-bottom: 200px;
+    margin-bottom: 10%;
 
 }
 
-.box:hover {
+.smallbox:hover {
     border-radius: 20px;
 }
 
