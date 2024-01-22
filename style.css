@@ -10,10 +10,6 @@ body {
     text-align: justify;
   }
 
- a {
-    color: var(--ctp-latte-green)
-  }
-
 h1 {
     font-family: 'Press Start 2P', system-ui;
     font-size: larger;
@@ -45,14 +41,14 @@ img {
 .icon {
     -webkit-transition: all 0.5s;
     transition: all 0.5;
-    color: var(--ctp-latte-lavender)
+    color: var(--ctp-latte-lavender);
     margin: 0 auto;
     padding: 50px;
 }
 
 .icon:hover {
     transform: scale(110%);
-    color: var(--ctp-latte-mauve)
+    color: var(--ctp-latte-mauve);
 }
 
 .logo {
@@ -109,7 +105,11 @@ img {
     line-height: 20px;
     cursor: pointer;
     transition: 0.3s;
-  }
+ }
+
+ .link {
+    color: var(--ctp-latte-green)
+ }
 
 .footer {
     margin-top: 75%;
@@ -123,10 +123,6 @@ img {
     body {
       color: var(--ctp-mocha-text);
       background: var(--ctp-mocha-base);
-    }
-
-    a {
-        color: var(--ctp-mocha-green)
     }
 
     h1 {
@@ -168,7 +164,10 @@ img {
     .closebutton {
         color: var(--ctp-mocha-text);
     }
-
+    
+    .link {
+        color: var(--ctp-mocha-green)
+    }
     .footer {
         border-color: var(--ctp-mocha-surface1);
     }
