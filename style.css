@@ -10,6 +10,9 @@ body {
     text-align: justify;
   }
 
+ a {
+    color: var(--ctp-latte-green)
+  }
 
 h1 {
     font-family: 'Press Start 2P', system-ui;
@@ -54,6 +57,7 @@ img {
 
 .logo {
     float: left;
+    max-width: fit-content;
     
     border-color: var(--ctp-latte-mauve);
     border-radius: 10%;
@@ -88,6 +92,25 @@ img {
     border-radius: 20px;
 }
 
+.alert {
+  padding: 20px;
+  background-color: var(--ctp-latte-red);
+  color: var(--ctp-latte-text);
+  margin-bottom: 15px;
+}
+
+.closebutton {
+    margin-top: 10px;
+    margin-left: 15px;
+    color: var(--ctp-latte-text);
+    font-weight: bold;
+    float: right;
+    font-size: 50px;
+    line-height: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+
 .footer {
     margin-top: 75%;
     padding: 50px;
@@ -95,15 +118,15 @@ img {
     border-color: var(--ctp-latte-surface1);
 }
 
-.responsive {
-    max-width: fit-content;
-    height: auto;
-  }
 
 @media (prefers-color-scheme: dark) {
     body {
       color: var(--ctp-mocha-text);
       background: var(--ctp-mocha-base);
+    }
+
+    a {
+        color: var(--ctp-mocha-green)
     }
 
     h1 {
@@ -135,6 +158,15 @@ img {
 
     .smallbox {
         background: linear-gradient(var(--ctp-mocha-base), var(--ctp-mocha-crust)) padding-box, linear-gradient(var(--ctp-mocha-lavender), var(--ctp-mocha-mauve)) border-box;
+    }
+
+    .alert {
+        color: var(--ctp-mocha-text);
+        background-color: var(--ctp-mocha-red);
+    }
+
+    .closebutton {
+        color: var(--ctp-mocha-text);
     }
 
     .footer {
