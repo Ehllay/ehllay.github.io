@@ -34,6 +34,15 @@ img {
     margin-right: 1.75%;
 }
 
+/*Languages */
+.spanish {
+    display: none;
+}
+div[lang=es] .spanish {
+    display: block;
+}
+
+
 .lavender {
         color: var(--ctp-latte-lavender);
       }
@@ -86,16 +95,6 @@ img {
 
 .smallbox:hover {
     border-radius: 20px;
-}
-
-.tinybox {
-    border-radius: 25px;
-    font-size: 25px;
-    margin: auto;
-    align-items: end;
-    padding: 10px;
-    width: max-content;
-    height: auto;
 }
 
 .alert {
