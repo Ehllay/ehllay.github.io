@@ -34,14 +34,6 @@ img {
     margin-right: 1.75%;
 }
 
-/*Languages */
-.spanish {
-    display: none;
-}
-div[lang=es] .spanish {
-    display: block;
-}
-
 
 .lavender {
         color: var(--ctp-latte-lavender);
