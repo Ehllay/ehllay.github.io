@@ -1,4 +1,25 @@
+/*Colors*/
 @import url('https://unpkg.com/@catppuccin/palette/css/catppuccin.css');
+
+:root {
+    --nl-background: #161925;
+    --nl-darker-background: #060919;
+    --nl-background-contrast: #2a2d38;
+    --nl-foreground: #dedaff;
+    --nl-red: #fd9b9d;
+    --nl-pink: #fcabd7;
+    --nl-green: #c4fc83;
+    --nl-light-green: #d7fcab;
+    --nl-yellow: #fcf9ab;
+    --nl-blue: #8387fc;
+    --nl-light-blue: #abaefc;
+    --nl-purple: #ca9bfd;
+    --nl-aqua: #adfcf9;
+    --nl-light-aqua: #c7fdfb;
+    --nl-white: #e7ecef;
+}
+
+
 
 body {
     color: var(--ctp-latte-text);
@@ -35,7 +56,7 @@ img {
 }
 
 
-.lavender {
+.blue-lavender {
         color: var(--ctp-latte-lavender);
       }
 
@@ -119,7 +140,63 @@ img {
     border-color: var(--ctp-latte-surface1);
 }
 
+@media (prefers-color-scheme: dark) {
+    body {
+      color: var(--nl-foreground);
+      background: var(--nl-background);
+    }
 
+    h1 {
+        text-shadow: 3px 3px var(--nl-background-contrast);
+    }
+  
+    .blue-lavender {
+
+        color: var(--nl-blue);
+      }
+
+    .icon {
+        color: var(--nl-blue)
+    }
+    .icon:hover {
+
+        color: var(--nl-purple)
+    }
+
+    .logo {
+        border-color: var(--nl-purple);
+
+    }
+
+    .logo:hover {
+
+        border-color: var(--nl-blue);
+        box-shadow: 20px 20px 0px var(--nl-darker-background);
+    }
+
+    .smallbox {
+        background: linear-gradient(var(--nl-background), var(--nl-darker-background)) padding-box, linear-gradient(var(--nl-blue), var(--nl-purple)) border-box;
+    }
+
+    .alert {
+        color: var(--nl-foreground);
+        background-color: var(--nl-red);
+    }
+
+    .closebutton {
+        color: var(--nl-foreground);
+    }
+    
+    .link {
+        color: var(--nl-green)
+    }
+    .footer {
+        border-color: var(--nl-background-contrast);
+    }
+
+  }
+/* Cattppuccin mocha version, will save for later */
+/*
 @media (prefers-color-scheme: dark) {
     body {
       color: var(--ctp-mocha-text);
@@ -130,7 +207,7 @@ img {
         text-shadow: 3px 3px var(--ctp-mocha-surface1);
     }
   
-    .lavender {
+    .blue-lavender {
 
         color: var(--ctp-mocha-lavender);
       }
@@ -174,3 +251,4 @@ img {
     }
 
   }
+*/
