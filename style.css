@@ -44,6 +44,7 @@ h1 {
 h2 {
     font-family: 'Press Start 2P', system-ui;
     font-size:larger;
+    position: relative;
 
     text-shadow: 3px 3px var(--ctp-latte-surface1);    
     transition: 0.5s ease;
