@@ -81,6 +81,7 @@ img {
 
 .icon {
     -webkit-transition: all 0.5s;
+    position: relative;
     transition: all 0.5;
     color: var(--ctp-latte-lavender);
     margin: 0 auto;
@@ -95,6 +96,18 @@ img {
 .abouticon {
     color: var(--ctp-latte-text);
     padding: 10px 50px;
+}
+
+.hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
 }
 
 .logo {
