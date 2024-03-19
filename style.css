@@ -78,6 +78,9 @@ img {
 .blue-lavender {
         color: var(--ctp-latte-lavender);
       }
+.contrast {
+    color: var(--ctp-latte-surface1)
+}
 
 .icon {
     -webkit-transition: all 0.5s;
@@ -149,7 +152,7 @@ img {
 .bigbox {
     overflow: auto;
     padding: 0 2%;
-    margin-top: 12%;
+    margin-top: 10%;
 
 }
 
@@ -163,8 +166,6 @@ img {
 .break {
     border-top-style: solid;
     border-color: var(--ctp-latte-surface1);
-    display: flex;
-    flex-wrap: nowrap;
 }
 
 .box:hover {
@@ -227,6 +228,9 @@ img {
 
         color: var(--nl-blue);
       }
+    .contrast {
+        color: var(--nl-background-contrast)
+    }
 
     .icon {
         color: var(--nl-blue)
